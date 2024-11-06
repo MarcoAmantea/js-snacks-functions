@@ -9,9 +9,22 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+    function greetingsDate(string){
+        const date = new Date();
+        let ciao =""
+        if(date.getHours() <= 13){
+            ciao = `Buongiorno ${string}`
+        } else if (date.getHours() <= 17){
+            ciao = `Buon pomeriggio ${string}`
+        }else if(date.getHours() >= 17){
+            ciao = `Buonasera ${string}`
+        }
+        return ciao;
+    }
+    
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(greetingsDate(name));
 
 
 
