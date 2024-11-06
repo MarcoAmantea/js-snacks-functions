@@ -13,7 +13,7 @@ function initialLetter(array) {
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(initialLetter(names));
+console.log(initialLtter(names));
 
 
 

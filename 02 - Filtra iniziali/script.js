@@ -4,9 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function getInitialName(array, letter){
+    const newArray = []
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+    if(letter === element[0]){
+        newArray.push(element);
+    }
+    }
+    return newArray;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(getInitialName(names,"A"));
+
 
 
 
